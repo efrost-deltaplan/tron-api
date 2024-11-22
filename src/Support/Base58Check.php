@@ -1,5 +1,5 @@
 <?php
-namespace IEXBase\TronAPI\Support;
+namespace EFrostDeltaplan\TronAPI\Support;
 
 class Base58Check
 {

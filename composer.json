@@ -1,13 +1,17 @@
 {
-    "name": "iexbase/tron-api",
-    "description": "A PHP API for interacting with Tron (Trx)",
+    "name": "efrost-deltaplan/tron-api",
+    "description": "A PHP API for interacting with Tron (Trx) using web3p/web3.php",
     "license": "MIT",
     "type":   "library",
-    "homepage": "https://github.com/iexbase/tron-api",
+    "homepage": "https://github.com/efrost-deltaplan/tron-api",
     "authors": [
         {
             "name": "Shamsudin Serderov",
             "email": "steein.shamsudin@gmail.com"
+        },
+        {
+            "name": "Eugene Frost",
+            "email": "e.frost@deltaplan.pro"
         }
     ],
     "keywords": [
@@ -17,37 +21,32 @@
         "tron-api",
         "tron-rest-api"
     ],
-
     "require": {
-        "php": ">=8.0",
+        "php": "^8.0",
         "comely-io/data-types": "^1.0",
-        "guzzlehttp/guzzle": "^7.2",
-        "iexbase/web3.php": "^2.0.1",
+        "guzzlehttp/guzzle": "^7.8",
+        "web3p/web3.php": "^2.0.1",
         "kornrunner/secp256k1": "^0.2",
         "simplito/elliptic-php": "^1.0",
         "ext-json": "*",
         "ext-bcmath": "*"
     },
-
     "require-dev": {
-        "phpunit/phpunit": "^6.0"
+        "phpunit/phpunit": "^11.0"
     },
     "autoload": {
         "psr-4": {
-            "IEXBase\\TronAPI\\": "src"
+            "EFrostDeltaplan\\TronAPI\\": "src"
         }
     },
-
     "autoload-dev": {
         "psr-4": {
-            "IEXBase\\TronAPI\\Test\\": "tests"
+            "EFrostDeltaplan\\TronAPI\\Test\\": "tests"
         }
     },
-
     "config": {
         "sort-packages": true
     },
-
     "minimum-stability": "dev",
     "prefer-stable": true
 }

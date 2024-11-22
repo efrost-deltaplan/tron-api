@@ -1,8 +1,8 @@
 <?php
-namespace IEXBase\TronAPI\Concerns;
+namespace EFrostDeltaplan\TronAPI\Concerns;
 
 
-use IEXBase\TronAPI\Exception\TronException;
+use EFrostDeltaplan\TronAPI\Exception\TronException;
 
 trait ManagesTronscan
 {

@@ -1,11 +1,11 @@
 <?php
-$fullNode = new \IEXBase\TronAPI\Provider\HttpProvider('https://api.trongrid.io');
-$solidityNode = new \IEXBase\TronAPI\Provider\HttpProvider('https://api.trongrid.io');
-$eventServer = new \IEXBase\TronAPI\Provider\HttpProvider('https://api.trongrid.io');
+$fullNode = new \EFrostDeltaplan\TronAPI\Provider\HttpProvider('https://api.trongrid.io');
+$solidityNode = new \EFrostDeltaplan\TronAPI\Provider\HttpProvider('https://api.trongrid.io');
+$eventServer = new \EFrostDeltaplan\TronAPI\Provider\HttpProvider('https://api.trongrid.io');
 
 try {
-    $tron = new \IEXBase\TronAPI\Tron($fullNode, $solidityNode, $eventServer);
-} catch (\IEXBase\TronAPI\Exception\TronException $e) {
+    $tron = new \EFrostDeltaplan\TronAPI\Tron($fullNode, $solidityNode, $eventServer);
+} catch (\EFrostDeltaplan\TronAPI\Exception\TronException $e) {
     exit($e->getMessage());
 }
 
@@ -14,6 +14,6 @@ try {
     $transaction = $tron->getTransactionBuilder()->sendTrx('to', 2,'fromAddress');
     $signedTransaction = $tron->signTransaction($transaction);
     $response = $tron->sendRawTransaction($signedTransaction);
-} catch (\IEXBase\TronAPI\Exception\TronException $e) {
+} catch (\EFrostDeltaplan\TronAPI\Exception\TronException $e) {
     die($e->getMessage());
 }

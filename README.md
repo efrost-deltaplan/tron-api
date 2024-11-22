@@ -1,5 +1,5 @@
-# TRON API
-A PHP API for interacting with the Tron Protocol
+# TRON API (with web3p/web3.php)
+A PHP API for interacting with the Tron Protocol using original web3.php
 
 [![Latest Stable Version](https://poser.pugx.org/iexbase/tron-api/version)](https://packagist.org/packages/iexbase/tron-api)
 [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE)
@@ -10,7 +10,7 @@ A PHP API for interacting with the Tron Protocol
 ## Install
 
 ```bash
-> composer require iexbase/tron-api --ignore-platform-reqs
+> composer require efrost-deltaplan/tron-api --ignore-platform-reqs
 ```
 ## Requirements
 
@@ -21,15 +21,15 @@ The following versions of PHP are supported by this version.
 ## Example Usage
 
 ```php
-use IEXBase\TronAPI\Tron;
+use EFrostDeltaplan\TronAPI\Tron;
 
-$fullNode = new \IEXBase\TronAPI\Provider\HttpProvider('https://api.trongrid.io');
-$solidityNode = new \IEXBase\TronAPI\Provider\HttpProvider('https://api.trongrid.io');
-$eventServer = new \IEXBase\TronAPI\Provider\HttpProvider('https://api.trongrid.io');
+$fullNode = new \EFrostDeltaplan\TronAPI\Provider\HttpProvider('https://api.trongrid.io');
+$solidityNode = new \EFrostDeltaplan\TronAPI\Provider\HttpProvider('https://api.trongrid.io');
+$eventServer = new \EFrostDeltaplan\TronAPI\Provider\HttpProvider('https://api.trongrid.io');
 
 try {
-    $tron = new \IEXBase\TronAPI\Tron($fullNode, $solidityNode, $eventServer);
-} catch (\IEXBase\TronAPI\Exception\TronException $e) {
+    $tron = new \EFrostDeltaplan\TronAPI\Tron($fullNode, $solidityNode, $eventServer);
+} catch (\EFrostDeltaplan\TronAPI\Exception\TronException $e) {
     exit($e->getMessage());
 }
 
