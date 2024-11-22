@@ -21,15 +21,15 @@ The following versions of PHP are supported by this version.
 ## Example Usage
 
 ```php
-use EFrostDeltaplan\TronAPI\Tron;
+use IEXBase\TronAPI\Tron;
 
-$fullNode = new \EFrostDeltaplan\TronAPI\Provider\HttpProvider('https://api.trongrid.io');
-$solidityNode = new \EFrostDeltaplan\TronAPI\Provider\HttpProvider('https://api.trongrid.io');
-$eventServer = new \EFrostDeltaplan\TronAPI\Provider\HttpProvider('https://api.trongrid.io');
+$fullNode = new \IEXBase\TronAPI\Provider\HttpProvider('https://api.trongrid.io');
+$solidityNode = new \IEXBase\TronAPI\Provider\HttpProvider('https://api.trongrid.io');
+$eventServer = new \IEXBase\TronAPI\Provider\HttpProvider('https://api.trongrid.io');
 
 try {
-    $tron = new \EFrostDeltaplan\TronAPI\Tron($fullNode, $solidityNode, $eventServer);
-} catch (\EFrostDeltaplan\TronAPI\Exception\TronException $e) {
+    $tron = new \IEXBase\TronAPI\Tron($fullNode, $solidityNode, $eventServer);
+} catch (\IEXBase\TronAPI\Exception\TronException $e) {
     exit($e->getMessage());
 }
 

@@ -2,7 +2,7 @@
 include_once '../vendor/autoload.php';
 
 try {
-    $tron = new \EFrostDeltaplan\TronAPI\Tron();
+    $tron = new \IEXBase\TronAPI\Tron();
 
     $generateAddress = $tron->generateAddress(); // or createAddress()
     $isValid = $tron->isAddress($generateAddress->getAddress());
@@ -16,7 +16,7 @@ try {
 
     echo 'Raw data: '.$generateAddress->getRawData();
 
-} catch (\EFrostDeltaplan\TronAPI\Exception\TronException $e) {
+} catch (\IEXBase\TronAPI\Exception\TronException $e) {
     echo $e->getMessage();
 }
 

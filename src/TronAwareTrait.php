@@ -1,8 +1,8 @@
 <?php declare(strict_types=1);
 
-namespace EFrostDeltaplan\TronAPI;
+namespace IEXBase\TronAPI;
 
-use EFrostDeltaplan\TronAPI\Support\{Base58Check, BigInteger, Keccak};
+use IEXBase\TronAPI\Support\{Base58Check, BigInteger, Keccak};
 trait TronAwareTrait
 {
     /**

@@ -1,11 +1,11 @@
 <?php declare(strict_types=1);
 
-namespace EFrostDeltaplan\TronAPI\Provider;
+namespace IEXBase\TronAPI\Provider;
 
 use GuzzleHttp\{Psr7\Request, Client, ClientInterface};
 use Psr\Http\Message\StreamInterface;
-use EFrostDeltaplan\TronAPI\Exception\{NotFoundException, TronException};
-use EFrostDeltaplan\TronAPI\Support\Utils;
+use IEXBase\TronAPI\Exception\{NotFoundException, TronException};
+use IEXBase\TronAPI\Support\Utils;
 
 class HttpProvider implements HttpProviderInterface
 {

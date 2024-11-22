@@ -1,8 +1,8 @@
 <?php declare(strict_types=1);
 
-namespace EFrostDeltaplan\TronAPI;
+namespace IEXBase\TronAPI;
 
-use EFrostDeltaplan\TronAPI\Exception\TronException;
+use IEXBase\TronAPI\Exception\TronException;
 
 interface TronInterface
 {

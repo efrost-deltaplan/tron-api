@@ -14,11 +14,11 @@
 
 declare(strict_types=1);
 
-namespace EFrostDeltaplan\TronAPI;
+namespace IEXBase\TronAPI;
 
 use Comely\DataTypes\BcNumber;
-use EFrostDeltaplan\TronAPI\Exception\TRC20Exception;
-use EFrostDeltaplan\TronAPI\Exception\TronException;
+use IEXBase\TronAPI\Exception\TRC20Exception;
+use IEXBase\TronAPI\Exception\TronException;
 
 /**
  * Class TRC20Contract

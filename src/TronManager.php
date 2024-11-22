@@ -1,9 +1,9 @@
 <?php
-namespace EFrostDeltaplan\TronAPI;
+namespace IEXBase\TronAPI;
 
 
-use EFrostDeltaplan\TronAPI\Exception\TronException;
-use EFrostDeltaplan\TronAPI\Provider\{HttpProvider, HttpProviderInterface};
+use IEXBase\TronAPI\Exception\TronException;
+use IEXBase\TronAPI\Provider\{HttpProvider, HttpProviderInterface};
 
 class TronManager
 {

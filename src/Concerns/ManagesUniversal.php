@@ -1,8 +1,8 @@
 <?php
-namespace EFrostDeltaplan\TronAPI\Concerns;
+namespace IEXBase\TronAPI\Concerns;
 
 
-use EFrostDeltaplan\TronAPI\Exception\ErrorException;
+use IEXBase\TronAPI\Exception\ErrorException;
 
 trait ManagesUniversal
 {

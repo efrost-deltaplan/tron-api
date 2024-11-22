@@ -1,7 +1,7 @@
 <?php
 include_once '../vendor/autoload.php';
 
-$tron = new \EFrostDeltaplan\TronAPI\Tron();
+$tron = new \IEXBase\TronAPI\Tron();
 
 /**
  * WARNING: When sending funds, you should not specify these parameters

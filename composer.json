@@ -35,12 +35,12 @@
     },
     "autoload": {
         "psr-4": {
-            "EFrostDeltaplan\\TronAPI\\": "src"
+            "IEXBase\\TronAPI\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "EFrostDeltaplan\\TronAPI\\Test\\": "tests"
+            "IEXBase\\TronAPI\\Test\\": "tests"
         }
     },
     "config": {

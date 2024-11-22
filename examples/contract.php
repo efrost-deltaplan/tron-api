@@ -2,14 +2,14 @@
 
 include_once '../vendor/autoload.php';
 
-use EFrostDeltaplan\TronAPI\Tron;
+use IEXBase\TronAPI\Tron;
 
 
 try {
-    $fullNode = new \EFrostDeltaplan\TronAPI\Provider\HttpProvider('https://api.trongrid.io');
-    $solidityNode = new \EFrostDeltaplan\TronAPI\Provider\HttpProvider('https://api.trongrid.io');
-    $eventServer = new \EFrostDeltaplan\TronAPI\Provider\HttpProvider('https://api.trongrid.io');
-} catch (\EFrostDeltaplan\TronAPI\Exception\TronException $e) {
+    $fullNode = new \IEXBase\TronAPI\Provider\HttpProvider('https://api.trongrid.io');
+    $solidityNode = new \IEXBase\TronAPI\Provider\HttpProvider('https://api.trongrid.io');
+    $eventServer = new \IEXBase\TronAPI\Provider\HttpProvider('https://api.trongrid.io');
+} catch (\IEXBase\TronAPI\Exception\TronException $e) {
     echo $e->getMessage();
 }
 
@@ -26,6 +26,6 @@ try {
     //echo  $contract->transfer('to', 'amount', 'from');
 
 
-} catch (\EFrostDeltaplan\TronAPI\Exception\TronException $e) {
+} catch (\IEXBase\TronAPI\Exception\TronException $e) {
     echo $e->getMessage();
 }

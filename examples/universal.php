@@ -1,7 +1,7 @@
 <?php
 include_once '../vendor/autoload.php';
 
-use EFrostDeltaplan\TronAPI\Tron;
+use IEXBase\TronAPI\Tron;
 
 $tron = new Tron();
 $tron->setPrivateKey('...');

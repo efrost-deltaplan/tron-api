@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace EFrostDeltaplan\TronAPI\Support;
+namespace IEXBase\TronAPI\Support;
 
 use kornrunner\Secp256k1;
 use kornrunner\Signature\Signature;

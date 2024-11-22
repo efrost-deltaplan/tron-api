@@ -1,7 +1,7 @@
 <?php
-namespace EFrostDeltaplan\TronAPI;
+namespace IEXBase\TronAPI;
 
-use EFrostDeltaplan\TronAPI\Exception\TronException;
+use IEXBase\TronAPI\Exception\TronException;
 
 // Web3 plugin
 use Web3\Contracts\Ethabi;
