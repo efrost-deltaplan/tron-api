@@ -1,3 +1,6 @@
+# Idea
+.idea/
+
 # User-specific stuff
 .idea/**/workspace.xml
 .idea/php.xml
